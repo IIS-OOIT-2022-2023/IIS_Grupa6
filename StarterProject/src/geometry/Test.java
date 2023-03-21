@@ -82,6 +82,18 @@ public class Test {
 		// povrsine pravougaonika r1 i y koordinate pocetne tacke linije l1
 		
         c1.getCenter().setX(r1.area()-l1.getStartPoint().getY());
+        
+        
+        //Vezbe 4.
+        Point p4 = new Point(50,40);
+        Point p5 = new Point(55,30, true);
+        
+        Line l2 = new Line(new Point(50,40), new Point(60,70));
+        
+        
+        
+        
+        
 
 	}
 
