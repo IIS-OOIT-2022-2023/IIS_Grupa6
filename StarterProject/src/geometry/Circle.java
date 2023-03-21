@@ -29,6 +29,16 @@ public class Circle {
 		return 2*radius*Math.PI;
 	}  
 	
+	public boolean equals(Object obj) {		
+		if(obj instanceof Circle) {
+			Circle c = (Circle)obj;
+			if(this.center.equals(c.center)
+					&& this.radius==c.radius) {
+				return true;
+			}
+		}		
+		return false;
+	}
 	public Point getCenter() {
 		return center;
 	}
@@ -46,6 +56,10 @@ public class Circle {
 	}
 	public void setSelected(boolean selected) {
 		this.selected = selected;
+	}
+	
+	public String toString() {
+		return "Center=" + center + ", radius=" + radius;
 	}
 	
 	

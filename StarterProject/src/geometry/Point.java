@@ -27,6 +27,16 @@ public class Point {
 		return distance;
 	}
 	
+	public boolean equals(Object obj) {		
+		if(obj instanceof Point) {
+			Point p = (Point)obj;
+			if(this.x==p.x && this.y==p.y) {
+				return true;
+			}
+		}		
+		return false;
+	}
+	
 	public int getX() {
 		return x;
 	}
@@ -49,6 +59,10 @@ public class Point {
 	
 	public void setSelected(boolean selected) {
 		this.selected=selected;
+	}
+	
+	public String toString() {
+		return "("+x+","+y+")";
 	}
 
 

@@ -30,6 +30,18 @@ public class Rectangle {
 		return 2*(width+height);
 	}  
 	
+	public boolean equals(Object obj) {		
+		if(obj instanceof Rectangle) {
+			Rectangle r = (Rectangle)obj;
+			if(this.upperLeftPoint.equals(r.upperLeftPoint)
+					&& this.width==r.width 
+					&& this.height==r.height) {
+				return true;
+			}
+		}		
+		return false;
+	}
+	
 	public Point getUpperLeftPoint() {
 		return upperLeftPoint;
 	}
@@ -53,6 +65,10 @@ public class Rectangle {
 	}
 	public void setSelected(boolean selected) {
 		this.selected = selected;
+	}
+	
+	public String toString() {
+		return "Upper left point:" + upperLeftPoint + ", width =" + width + ",height = " + height;
 	}
 	
 	

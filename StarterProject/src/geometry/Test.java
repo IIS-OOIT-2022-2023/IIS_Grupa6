@@ -21,7 +21,7 @@ public class Test {
 		System.out.println(distance);*/
 		
 		//VEZBE 3.
-		Point p = new Point();
+		/*Point p = new Point();
 		Point p1 = new Point();
 		p1.setX(30);
 		p1.setY(40);
@@ -82,14 +82,37 @@ public class Test {
 		// povrsine pravougaonika r1 i y koordinate pocetne tacke linije l1
 		
         c1.getCenter().setX(r1.area()-l1.getStartPoint().getY());
-        
+        */
         
         //Vezbe 4.
         Point p4 = new Point(50,40);
-        Point p5 = new Point(55,30, true);
         
         Line l2 = new Line(new Point(50,40), new Point(60,70));
         
+        System.out.println(p4.toString());
+        System.out.println(p4);
+        System.out.println(l2);
+        
+        int a=5;
+        int b=6;
+        System.out.println(a==b);
+        
+        String a1 = "abc";
+        String b1 = "abcd";
+        System.out.println(a1==b1);
+        
+        String s1 = new String("Hello World");
+        String s2 = new String("Hello World"); 
+        System.out.println(s1==s2);
+        /*s1=s2;
+        System.out.println(s1==s2);*/
+        System.out.println(s1.equals(s2));
+        
+        
+
+        Point p5 = new Point(50,40);
+        System.out.println(p4==p5);
+        System.out.println(p4.equals(p5));
         
         
         
