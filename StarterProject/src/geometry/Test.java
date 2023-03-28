@@ -114,6 +114,11 @@ public class Test {
         System.out.println(p4==p5);
         System.out.println(p4.equals(p5));
         
+        Donut d = new Donut(p5, 25, 15);
+        System.out.println(d);
+        
+        Circle c5 = new Donut(p5, 25, 15);
+        System.out.println(((Donut)c5).getInnerRadius());
         
         
         

@@ -20,7 +20,12 @@ public class Line {
 		this.selected=selected;
 	}
 	
-	public double lenght() {
+	public boolean contains(int x, int y) {
+		return this.startPoint.distance(new Point(x,y)) 
+				+ this.endPoint.distance(new Point(x,y)) - length() <= 2;
+	}
+	
+	public double length() {
 		return this.startPoint.distance(endPoint);
 	}
 	

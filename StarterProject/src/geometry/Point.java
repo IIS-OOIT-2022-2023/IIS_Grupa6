@@ -20,6 +20,10 @@ public class Point {
 		this.selected=selected;
 	}
 	
+	public boolean contains(int x, int y) {
+		return this.distance(new Point(x,y)) <= 2;
+	}
+	
 	public double distance(Point point2) {
 		double dx=this.x-point2.getX();
 		double dy=this.y-point2.y;

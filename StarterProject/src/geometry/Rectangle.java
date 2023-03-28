@@ -22,6 +22,13 @@ public class Rectangle {
 		setSelected(selected);
 	}
 	
+	public boolean contains(int x, int y) {
+		return x >= upperLeftPoint.getX() && 
+				x <= upperLeftPoint.getX() + width && 
+				y >= upperLeftPoint.getY() &&
+				y <= upperLeftPoint.getY() + height;
+	}
+	
 	public int area() {
 		return width*height;
 	}  
